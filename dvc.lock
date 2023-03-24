@@ -1,0 +1,26 @@
+schema: '2.0'
+stages:
+  data_ingestion:
+    cmd: python src/Spam/pipeline/stage_01_data_ingestion.py
+    deps:
+    - path: config/schema.yaml
+      md5: 6059806f7175936be691155ae660fd23
+      size: 43
+    - path: src/Spam/entity/artifact_entity.py
+      md5: 21ad6832d7d763d7ba85b368abb9abb8
+      size: 125
+    - path: src/Spam/entity/config_entity.py
+      md5: b6b344767cbc3542adc5f900cd961afd
+      size: 1482
+    - path: src/Spam/pipeline/stage_01_data_ingestion.py
+      md5: 413a798926dc05606f4db21e8094f744
+      size: 93
+    outs:
+    - path: artifact/data_ingestion/feature_store
+      md5: dfc4c7258a0df583d23f9005fd0dc940.dir
+      size: 4256112
+      nfiles: 1
+    - path: artifact/data_ingestion/ingested
+      md5: dd9d0c10018710a33a2f930796377cd5.dir
+      size: 4256124
+      nfiles: 2
