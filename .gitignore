@@ -132,3 +132,4 @@ dmypy.json
 
 logs/
 artifact/
+research/trials.ipynb
