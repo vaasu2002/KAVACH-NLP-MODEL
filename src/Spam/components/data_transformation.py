@@ -116,7 +116,10 @@ class DataTransformation:
 
 
             target_feature_train_array = np.array(target_feature_train_df)
+            target_feature_train_array = np.reshape(target_feature_train_array, (-1,1))
+
             target_feature_test_array = np.array(target_feature_test_df)
+            target_feature_test_array = np.reshape(target_feature_test_array, (-1,1))
 
 
             transformed_input_train_feature = transformed_input_train_feature.toarray()
