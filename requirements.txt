@@ -5,6 +5,7 @@ pandas
 imblearn
 dill
 pyyaml
+nltk
 requests
 scikit-learn
 tensorflow
